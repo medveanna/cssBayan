@@ -34,7 +34,13 @@ h1 {
 
 .mems {
   cursor: pointer;
-  color: blue;
+  color: blackпш;
+}
+
+@media screen and (min-width: 1100px) {
+  .mems {
+    color: blue;
+  }
 }
 
 .mems:hover {
@@ -49,10 +55,6 @@ hr {
   display: block;
 }
 
-.mem-item:hover .mem-img1 {
-  display: block;
-}
-
 .mem-item:hover .icon {
   background-image: url("./icons/star-solid.svg");  
 }
@@ -61,7 +63,7 @@ hr {
   cursor: pointer;
 }
 
-.mem-title {
+/* .mem-title {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -69,7 +71,7 @@ hr {
   margin: 0;
   font: 900 20px sans-serif;
   cursor: pointer;
-}
+} */
 
 .mem-title1 {
   display: flex;
@@ -110,35 +112,21 @@ hr {
   padding-bottom: 10px;
 }
 
-.mem-img1 {
-  display: none;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-.mem-input:checked ~ .mem-title {
+/* .mem-input:checked ~ .mem-title {
   color: black;
-}
+} */
 
 .mem-input:checked ~ .mem-content {
   color: black;
 }
 
-.mem-input:checked ~ .mem-img {
+.mem-input:checked + .mem-content > .mem-img {
   display: block;
 }
 
-.mem-input:checked ~ .mem-img {
-  display: block;
-}
-
-.mem-input:checked + .mem-content > .mem-img1 {
-  display: block;
-}
-
-.mem-input:checked + .mem-title > .icon {
+/* .mem-input:checked + .mem-title > .icon {
   background-image: url("./icons/star-solid.svg");
-}
+} */
 
 .mem-input:checked + .mem-content .icon {
   background-image: url("./icons/star-solid.svg");
