@@ -43,6 +43,10 @@ hr {
   background-image: url("./icons/star-solid.svg");  
 }
 
+.mem-content {
+  cursor: pointer;
+}
+
 .mem-title {
   display: flex;
   flex-flow: row wrap;
